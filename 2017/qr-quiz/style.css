@@ -93,12 +93,10 @@ p {
 	margin: 0 auto;
 }
 .start {
+	color: #f3f3f3;
 	font-size: 1.2em;
 	border-radius: 5px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f53232), to(#c9e84b));
-	background: -webkit-linear-gradient(#f53232, #c9e84b);
-	background: -o-linear-gradient(#f53232, #c9e84b);
-	background: linear-gradient(#f53232, #c9e84b);
+	background: ##ed534c;
 	padding: 9px 24px;
 	margin: 0 auto;
 }
