@@ -41,13 +41,25 @@
 			<p>
 				下のボタンを押して、クイズを始めよう！
 			</p>
-			<span class="start">
+			<a class="start">
 				START
-			</span>
+			</a>
 		</main>
 		<footer>
 			Copyright &#169; 2017 聖学院物理部 All Rights Reserved.
 		</footer>
+		<script src="//www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+		<script>
+		  var config = {
+		    apiKey: "AIzaSyC4MqJJpG1sRTory0RDRz6Ghfg-hlXWNVo",
+		    authDomain: "qr-question.firebaseapp.com",
+		    databaseURL: "https://qr-question.firebaseio.com",
+		    projectId: "qr-question",
+		    storageBucket: "qr-question.appspot.com",
+		    messagingSenderId: "97653232803"
+		  };
+		  firebase.initializeApp(config);
+		</script>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
