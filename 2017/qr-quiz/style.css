@@ -65,7 +65,7 @@ footer,header {
 	background: #3e80e4;
 	color: #f3f3f3;
 }
-footer,#header-content {
+footer,header {
 	margin: 0 auto;
 	padding: 30px;
 }
