@@ -48,6 +48,23 @@
 		<footer>
 			Copyright &#169; 2017 聖学院物理部 All Rights Reserved.
 		</footer>
+		<script>
+			function CookieCheck(){
+			  //ブラウザにあるクッキーの情報を取得
+			  String = document.cookie;
+			  //取得したクッキーに文字列「ysklog」があるか確認（「indexOf」は指定した文字列が何文字目にあるか検索するもの。なければ「-1」が返る）
+			  qr-question-1 = String.indexOf("qr-question-1",0);
+				qr-question-2 = String.indexOf("qr-question-2",0);
+			  //クッキーの有り無しで処理を分岐
+			  if(qr-question-1 == -1){
+		      alert("クッキーがないよ");
+			      //ブラウザにクッキーを渡す
+			      document.cookie = 'data=ysklog';
+				  }else{
+				    alert("クッキーがあるよ");
+			   }
+			}
+		</script>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
