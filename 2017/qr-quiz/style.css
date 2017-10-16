@@ -45,6 +45,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: unset;
+	text-align: center;
 	width: 100%;
 	background: #f2f2f2;
 	overflow-scrolling: touch;
@@ -67,7 +68,6 @@ footer,header {
 footer,#header-content {
 	margin: 0 auto;
 	padding: 30px;
-	text-align: center;
 }
 footer a,header a {
 	text-decoration: none;
@@ -93,14 +93,13 @@ p {
 	margin: 0 auto;
 }
 .start {
-	font-size: 1.5em;
-	text-align: center;
+	font-size: 1.2em;
 	border-radius: 5px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f53232), to(#c9e84b));
 	background: -webkit-linear-gradient(#f53232, #c9e84b);
 	background: -o-linear-gradient(#f53232, #c9e84b);
 	background: linear-gradient(#f53232, #c9e84b);
-	padding: 10px;
+	padding: 9px 24px;
 	margin: 0 auto;
 }
 
