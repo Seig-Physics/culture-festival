@@ -87,6 +87,21 @@ p {
 	margin: 10px 0 15px 0;
 }
 
+.logo {
+	width: 50vw;
+	margin: 0 auto;
+}
+.start {
+	font-size: 1.5em;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f53232), to(#c9e84b));
+	background: -webkit-linear-gradient(#f53232, #c9e84b);
+	background: -o-linear-gradient(#f53232, #c9e84b);
+	background: linear-gradient(#f53232, #c9e84b);
+	padding: 10px;
+	margin: 0 auto;
+}
+
 /* MainFont */
 
 @font-face {
