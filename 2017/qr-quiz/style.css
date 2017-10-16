@@ -89,10 +89,12 @@ p {
 
 .logo {
 	width: 50vw;
+	max-width: 250px;
 	margin: 0 auto;
 }
 .start {
 	font-size: 1.5em;
+	text-align: center;
 	border-radius: 5px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f53232), to(#c9e84b));
 	background: -webkit-linear-gradient(#f53232, #c9e84b);
