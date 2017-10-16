@@ -83,7 +83,6 @@ a {
 	transition: .3s;
 }
 p {
-	text-indent: 1em;
 	margin: 10px 0 15px 0;
 }
 
@@ -95,8 +94,8 @@ p {
 .start {
 	color: #f3f3f3;
 	font-size: 1.2em;
-	border-radius: 12px;
-	background: #3e80e4c;
+	border-radius: 6px;
+	background: #3e80e4;
 	padding: 9px 24px;
 	margin: 15px auto;
 }
