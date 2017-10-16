@@ -95,10 +95,10 @@ p {
 .start {
 	color: #f3f3f3;
 	font-size: 1.2em;
-	border-radius: 5px;
-	background: ##ed534c;
+	border-radius: 12px;
+	background: #3e80e4c;
 	padding: 9px 24px;
-	margin: 0 auto;
+	margin: 15px auto;
 }
 
 /* MainFont */
