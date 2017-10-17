@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /2017/qr-quiz/404.html
+Disallow: /2017/qr-quiz/*.css
+Disallow: /_config.yml
