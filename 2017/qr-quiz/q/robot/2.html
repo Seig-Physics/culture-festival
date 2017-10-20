@@ -39,9 +39,9 @@
 				四足歩行ロボットクイズ
 			</h1>
 			<h2>初めて準優勝になったチーム名は？</h2>
-			<label><input type="radio"/>梅チームズ</label><br>
-			<label><input type="radio"/>SHIMIZU</label><br>
-			<label><input type="radio"/>梅田</label>
+			<label><input type="radio" onclick="n"/>梅チームズ</label><br>
+			<label><input type="radio" onclick="n"/>SHIMIZU</label><br>
+			<label><input type="radio" onclick="y"/>梅田</label>
 			<button onclick="location.href='3'">
 				つぎへ
 			</button>
@@ -54,6 +54,12 @@
 		</script>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
+			function y(){
+		  	document.cookie = 'qr-question-1=y; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
+			function n(){
+		  	document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());

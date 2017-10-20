@@ -39,18 +39,10 @@
 				液体窒素クイズ
 			</h1>
 			<ol>
-				<li>液体窒素は何度でしょうか？</li>
-				<label><input type="radio"/>-196&#08451;</label><br>
-				<label><input type="radio"/>-274&#08451;</label><br>
-				<label><input type="radio"/>-487&#08451;</label>
-				<li>液体窒素に食べ物を入れたらどうなる？</li>
-				<label><input type="radio"/>凍るが食べられる</label><br>
-				<label><input type="radio"/>毒になる</label><br>
-				<label><input type="radio"/>なくなる</label>
-				<li>赤いバラを入れたらどうなる？</li>
-				<label><input type="radio"/>赤いバラになる</label><br>
-				<label><input type="radio"/>そのまま凍る</label><br>
-				<label><input type="radio"/>小さくなる</label>
+				<h3>赤いバラを入れたらどうなる？</h3>
+				<label><input type="radio" onclick="n"/>赤いバラになる</label><br>
+				<label><input type="radio" onclick="y"/>そのまま凍る</label><br>
+				<label><input type="radio" onclick="n"/>小さくなる</label>
 			</ol>
 		</main>
 		<footer>
@@ -58,6 +50,12 @@
 		</footer>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
+			function y(){
+		  	document.cookie = 'qr-question-1=y; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
+			function n(){
+		  	document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());

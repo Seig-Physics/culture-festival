@@ -39,9 +39,9 @@
 				個人研究クイズ
 			</h1>
 			<h3>LEDでできないことは？</h3>
-			<label><input type="radio"/>電気を貯め</label><br>
-			<label><input type="radio"/>発電する</label><br>
-			<label><input type="radio"/>光を出す</label>
+			<label><input type="radio" onclick="y"/>電気を貯め</label><br>
+			<label><input type="radio" onclick="n"/>発電する</label><br>
+			<label><input type="radio" onclick="n"/>光を出す</label>
 		</main>
 		<footer>
 			Copyright &#169; 2017 聖学院物理部 All Rights Reserved.
@@ -51,6 +51,12 @@
 		</script>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
+			function y(){
+		  	document.cookie = 'qr-question-1=y; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
+			function n(){
+		  	document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());

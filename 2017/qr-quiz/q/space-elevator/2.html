@@ -39,9 +39,9 @@
 				宇宙エレベータークイズ
 			</h1>
 			<h2></h2>
-			<label><input type="radio"/></label><br>
-			<label><input type="radio"/></label><br>
-			<label><input type="radio"/></label>
+			<label><input type="radio" onclick="n"/></label><br>
+			<label><input type="radio" onclick="n"/></label><br>
+			<label><input type="radio" onclick="y"/></label>
 			<button onclick="location.href='3'">
 				つぎへ
 			</button>
@@ -49,11 +49,14 @@
 		<footer>
 			Copyright &#169; 2017 聖学院物理部 All Rights Reserved.
 		</footer>
-		<script>
-		  document.cookie = 'qr-question-1=Y; domain=seig-physics.github.io; path=/; max-age=60*60*24';
-		</script>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
+			function y(){
+		  	document.cookie = 'qr-question-1=y; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
+			function n(){
+		  	document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());

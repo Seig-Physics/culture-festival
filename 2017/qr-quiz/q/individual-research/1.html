@@ -39,9 +39,9 @@
 				個人研究クイズ
 			</h1>
 			<h2>魔法瓶の実験は何年間続いている？</h2>
-			<label><input type="radio"/>1年間</label><br>
-			<label><input type="radio"/>2年間</label><br>
-			<label><input type="radio"/>3年間</label>
+			<label><input type="radio" onclick="n"/>1年間</label><br>
+			<label><input type="radio" onclick="y"/>2年間</label><br>
+			<label><input type="radio" onclick="n"/>3年間</label>
 			<button onclick="location.href='2'">
 				つぎへ
 			</button>
@@ -54,6 +54,12 @@
 		</script>
 		<script async src="//www.googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
+			function y(){
+		  	document.cookie = 'qr-question-1=y; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
+			function n(){
+		  	document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*24';
+			}
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
