@@ -9,9 +9,10 @@
 	display: block;
 }
 input,button,textarea,select {
-	y-webkit-appearance: none;
-	y-moz-appearance: none;
-	yappearance: none;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 blockquote,q {
 	quotes: none;
@@ -61,6 +62,10 @@ body {
 	color: #f8f8f8;
 	background: rgba(62,128,228,50);
 }
+main {
+	margin: 10px 0;
+	padding: 10px;
+}
 footer,header {
 	background: #3e80e4;
 	color: #f3f3f3;
@@ -91,9 +96,10 @@ p {
 	max-width: 250px;
 	margin: 0 auto;
 }
-.start {
-	color: #f3f3f3;
+button {
+	font-family: "Rounded Mplus 1c","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",'Hiragino Kaku Gothic ProN','Helvetica,Arial','sans-serif';
 	font-size: 1.2em;
+	color: #f3f3f3;
 	border-radius: 6px;
 	background: #3e80e4;
 	padding: 9px 24px;
