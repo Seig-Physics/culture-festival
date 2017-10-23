@@ -56,7 +56,6 @@ body {
 	-webkit-transform:translateZ(0);
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
