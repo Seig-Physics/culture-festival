@@ -36,12 +36,30 @@
 		</header>
 		<main>
 			<h1>
-				QRクイズへようこそ！
+				結果発表
 			</h1>
-			<p>
-				下のボタンを押して、クイズを始めよう！<br>
-				※あくまで今回の展示内容を通しての問題です。
-			</p>
+			<table class="table-01" border="1" width="100%">
+				<tr>
+					<td>No.1</td>
+					<td id="1"> </td>
+				</tr>
+				<tr>
+					<td>No.2</td>
+					<td id="2"> </td>
+				</tr>
+				<tr>
+					<td>No.3</td>
+					<td id="3"> </td>
+				</tr>
+				<tr>
+					<td>No.4</td>
+					<td id="4"> </td>
+				</tr>
+				<tr>
+					<td>No.5</td>
+					<td id="5"> </td>
+				</tr>
+			</table>
 			<a class="start">
 				START
 			</a>
@@ -50,20 +68,24 @@
 			Copyright &#169; 2017 聖学院物理部 All Rights Reserved.
 		</footer>
 		<script>
+			function Passing(number){
+				document.getElementById(number).innerHTML = "●"
+			}
+			function Failure(number){
+				document.getElementById(number).innerHTML = "×"
+			}
 			function CookieCheck(){
-			  //ブラウザにあるクッキーの情報を取得
-			  String = document.cookie;
-			  //取得したクッキーに文字列「ysklog」があるか確認（「indexOf」は指定した文字列が何文字目にあるか検索するもの。なければ「-1」が返る）
-			  qr-question-1 = String.indexOf("qr-question-1",0);
-				qr-question-2 = String.indexOf("qr-question-2",0);
-			  //クッキーの有り無しで処理を分岐
+			  cookie = document.cookie;
+			  qr-question-1 = cookie.indexOf("qr-question-1");
+				qr-question-2 = cookie.indexOf("qr-question-2");
+				qr-question-3 = cookie.indexOf("qr-question-3");
+				qr-question-4 = cookie.indexOf("qr-question-4");
+				qr-question-5 = cookie.indexOf("qr-question-5");
 			  if(qr-question-1 == -1){
-		      alert("クッキーがないよ");
-			      //ブラウザにクッキーを渡す
-			      document.cookie = 'data=ysklog';
-				  }else{
-				    alert("クッキーがあるよ");
-			   }
+			    Failure(1);
+				}else{
+					Passing(1);
+				}
 			}
 		</script>
 		<script async src="//googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
