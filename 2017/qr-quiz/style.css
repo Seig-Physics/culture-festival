@@ -10,9 +10,9 @@
 }
 input,button,textarea,select {
 	border: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+	x-webkit-appearance: none;
+	x-moz-appearance: none;
+	xappearance: none;
 }
 blockquote,q {
 	quotes: none;
