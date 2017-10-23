@@ -89,6 +89,8 @@ footer,header {
 	color: #f3f3f3;
 	margin: 0 auto;
 	padding: 30px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 footer a,header a {
 	text-decoration: none;
