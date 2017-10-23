@@ -109,10 +109,13 @@ p {
 	margin: 10px 0 15px 0;
 }
 
-.logo {
+#logo {
 	width: 50%;
 	max-width: 250px;
 	margin: 0 auto;
+}
+#question {
+	margin: 20px 0;
 }
 button {
 	font-family: "Rounded Mplus 1c","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",'Hiragino Kaku Gothic ProN','Helvetica,Arial','sans-serif';
@@ -121,7 +124,7 @@ button {
 	border-radius: 6px;
 	background: #3e80e4;
 	padding: 9px 24px;
-	margin: 15px auto;
+	margin: 0 auto;
 }
 
 /* MainFont */
