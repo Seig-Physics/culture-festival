@@ -125,6 +125,13 @@ button {
 	padding: 9px 24px;
 	margin: 0 auto;
 }
+table {
+	margin: 0 auto;
+}
+td {
+	text-align: left;
+	width: 5em;
+}
 
 /* MainFont */
 
