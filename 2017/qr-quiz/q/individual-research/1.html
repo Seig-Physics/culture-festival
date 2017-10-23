@@ -40,9 +40,9 @@
 			</h1>
 			<h2>魔法瓶の実験は何年間続いている？</h2>
 			<form id="question">
-				<label><input type="radio" name="choices" onclick="n" checked/>1年間</label><br>
-				<label><input type="radio" name="choices" onclick="y"/>2年間</label><br>
-				<label><input type="radio" name="choices" onclick="n"/>3年間</label><br>
+				<label><input type="radio" name="choices" value="1" checked/>1年間</label><br>
+				<label><input type="radio" name="choices" value="2"/>2年間</label><br>
+				<label><input type="radio" name="choices" value="3"/>3年間</label><br>
 			</form>
 			<button onclick="Decision();">つぎへ</button>
 		</main>
@@ -53,12 +53,12 @@
 		<script>
 			function Decision() {
 				let result = document.getElementById("question").hoge.value;
-				if (result === "") {
-					alert("選んでねーよバカ") ;
-					document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*12';
-				} else {
+				if (result === "2") {
 					alert("正解！クッキーに保存したよ！") ;
 					document.cookie = 'qr-question-1=y; domain=seig-physics.github.io; path=/; max-age=60*60*12';
+				} else {
+					alert("間違え！！！！ザマーミロwww") ;
+					document.cookie = 'qr-question-1=n; domain=seig-physics.github.io; path=/; max-age=60*60*12';
 				}
 			}
 		  window.dataLayer = window.dataLayer || [];
