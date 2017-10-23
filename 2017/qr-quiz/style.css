@@ -83,10 +83,9 @@ main {
 	        flex: 1;
 }
 footer,header {
+	width: 100%;
 	background: #3e80e4;
 	color: #f3f3f3;
-}
-footer,header {
 	margin: 0 auto;
 	padding: 30px;
 }
