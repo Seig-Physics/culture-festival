@@ -75,18 +75,16 @@
 			function Failure(number){
 				document.getElementById(number).innerHTML = "×"
 			}
-			function CookieCheck(){
-			  KUKKII = document.cookie;
-			  qr-question-1 = KUKKII.indexOf("qr-question-1");
-				qr-question-2 = KUKKII.indexOf("qr-question-2");
-				qr-question-3 = KUKKII.indexOf("qr-question-3");
-				qr-question-4 = KUKKII.indexOf("qr-question-4");
-				qr-question-5 = KUKKII.indexOf("qr-question-5");
-			  if(qr-question-1 == -1){
-			    Failure(1);
-				}else{
-					Passing(1);
-				}
+			let cookie = document.cookie;
+			qr-question-1 = cookie.indexOf("qr-question-1");
+			qr-question-2 = cookie.indexOf("qr-question-2");
+			qr-question-3 = cookie.indexOf("qr-question-3");
+			qr-question-4 = cookie.indexOf("qr-question-4");
+			qr-question-5 = cookie.indexOf("qr-question-5");
+			if(qr-question-1 == -1){
+			  Failure(1);
+			}else{
+				Passing(1);
 			}
 			window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
