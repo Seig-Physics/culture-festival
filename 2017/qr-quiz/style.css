@@ -143,10 +143,10 @@ input[name="choices"] {
 	display: none;
 }
 input[name="choices"]:checked + label {
-  background: #3769c8;
+  background: #1a5abb;
 }
 input[name="choices"] + label:hover {
-  background: #0f0;
+  background: #1d65d2;
 }
 table {
 	margin: 0 auto;
