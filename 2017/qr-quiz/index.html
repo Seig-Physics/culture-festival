@@ -55,6 +55,7 @@
 			if (!navigator.cookieEnabled) {
 				alert('Cookieが有効になっていません。紙をもらってください。');
 			}
+			document.cookie = 'qr-question-start=y; domain=seig-physics.github.io; path=/; max-age=60*60*12';
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
