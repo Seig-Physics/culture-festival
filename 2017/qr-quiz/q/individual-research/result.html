@@ -36,28 +36,20 @@
 		</header>
 		<main>
 			<h1>
-				結果発表
+				個人研究クイズ 結果発表
 			</h1>
 			<table>
 				<tr>
 					<td>No.1</td>
-					<td id="1"> </td>
+					<td id="1"></td>
 				</tr>
 				<tr>
 					<td>No.2</td>
-					<td id="2"> </td>
+					<td id="2"></td>
 				</tr>
 				<tr>
 					<td>No.3</td>
-					<td id="3"> </td>
-				</tr>
-				<tr>
-					<td>No.4</td>
-					<td id="4"> </td>
-				</tr>
-				<tr>
-					<td>No.5</td>
-					<td id="5"> </td>
+					<td id="3"></td>
 				</tr>
 			</table>
 		</main>
@@ -69,30 +61,20 @@
 			if (!navigator.cookieEnabled) {
 				alert('Cookieが有効になっていません。紙をもらってください。');
 			}
-			if(document.cookie.indexOf("qr-question-1=y",0) == -1){
+			if(document.cookie.indexOf("qr-question-individual-research-1=y",0) == -1){
 				Failure("1");
 				}else{
 				Passing("1");
 			}
-			if(document.cookie.indexOf("qr-question-2=y",0) == -1){
+			if(document.cookie.indexOf("qr-question-individual-research-2=y",0) == -1){
 				Failure("2");
 				}else{
 				Passing("2");
 			}
-			if(document.cookie.indexOf("qr-question-3=y",0) == -1){
+			if(document.cookie.indexOf("qr-question-individual-research-3=y",0) == -1){
 				Failure("3");
 				}else{
 				Passing("3");
-			}
-			if(document.cookie.indexOf("qr-question-4=y",0) == -1){
-				Failure("4");
-				}else{
-				Passing("4");
-			}
-			if(document.cookie.indexOf("qr-question-5=y",0) == -1){
-				Failure("5");
-				}else{
-				Passing("5");
 			}
 			function Failure(number){
 				document.getElementById(number).innerHTML = "×"
