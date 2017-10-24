@@ -116,14 +116,37 @@ p {
 #question {
 	margin: 20px 0;
 }
-button {
+button,label {
 	font-family: "Rounded Mplus 1c","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",'Hiragino Kaku Gothic ProN','Helvetica,Arial','sans-serif';
 	font-size: 1.2em;
+	text-align: center;
 	color: #f3f3f3;
 	border-radius: 6px;
 	background: #3e80e4;
 	padding: 9px 24px;
 	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+button {
+	background: #3e80e4;
+}
+label {
+	width: 80%;
+	background: #00ab95;
+	display: block;
+}
+input[name="choices"] {
+	display: none;
+}
+input[name="choices"]:checked + label {
+  background: #000;
+}
+input[name="choices"] + label:hover {
+  background: #0f0;
 }
 table {
 	margin: 0 auto;
