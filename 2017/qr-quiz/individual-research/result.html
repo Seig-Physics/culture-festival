@@ -24,20 +24,28 @@
 		<meta content="聖学院物理部の文化祭企画「QRクイズ」" property="og:description"/>
 		<meta content="画像" property="og:image"/>
 		<meta content="article" property="og:type"/>
-		<link href="https://seig-physics.github.io/culture-festival/2017/qr-quiz" rel="canonical"/>
+		<link href="https://seig-physics.github.io/culture-festival/2017/qr-quiz/individual-research/result" rel="canonical"/>
 		<link href="https://seig-physics.github.io/culture-festival/2017/qr-quiz/style.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
       <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,ie7.js@2.1b4(IE9.js),respond@1.4.2"></script>
     <![endif]-->
 	</head>
 	<body>
+		<script>
+			if (!navigator.cookieEnabled) {
+				alert('このデバイスに対応していません。紙をもらってください。');
+			}
+		</script>
 		<header>
-			<img src="//seig-physics.github.io/culture-festival/2017/qr-quiz/logo.svg" alt="結果発表 | 聖学院物理部 QRクイズ" id="logo">
+			<img src="//seig-physics.github.io/culture-festival/2017/qr-quiz/logo.svg" alt="聖学院物理部 QRクイズ" id="logo">
 		</header>
 		<main>
 			<h1>
 				個人研究クイズ 結果発表
 			</h1>
+			<noscript>
+				このデバイスに対応していません。紙をもらってください。
+			</noscript>
 			<table>
 				<tr>
 					<td>No.1</td>
@@ -58,20 +66,17 @@
 		</footer>
 		<script async src="//googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
-			if (!navigator.cookieEnabled) {
-				alert('Cookieが有効になっていません。紙をもらってください。');
-			}
-			if(document.cookie.indexOf("qr-question-individual-research-1=y",0) == -1){
+			if(document.cookie.indexOf("qr-quiz-individual-research-1=y",0) == -1){
 				Failure("1");
 				}else{
 				Passing("1");
 			}
-			if(document.cookie.indexOf("qr-question-individual-research-2=y",0) == -1){
+			if(document.cookie.indexOf("qr-quiz-individual-research-2=y",0) == -1){
 				Failure("2");
 				}else{
 				Passing("2");
 			}
-			if(document.cookie.indexOf("qr-question-individual-research-3=y",0) == -1){
+			if(document.cookie.indexOf("qr-quiz-individual-research-3=y",0) == -1){
 				Failure("3");
 				}else{
 				Passing("3");
