@@ -142,10 +142,10 @@ label {
 input[name="choices"] {
 	display: none;
 }
-input[name="choices"]:checked + label {
+button:active,input[name="choices"]:checked + label {
   background: #1a5abb;
 }
-input[name="choices"] + label:hover {
+button:hover,input[name="choices"] + label:hover {
   background: #1d65d2;
 }
 table {
