@@ -48,9 +48,9 @@
 			</noscript>
 			<h2>LEDでできないことは？</h2>
 			<form id="question">
-				<input type="radio" name="choices" value="1" id="1" checked><label for="1">電気を貯める</label><br>
+				<input type="radio" name="choices" value="1" id="1" checked><label for="1">光を出す</label><br>
 				<input type="radio" name="choices" value="2" id="2"><label for="2">発電する</label><br>
-				<input type="radio" name="choices" value="3" id="3"><label for="3">光を出す</label><br>
+				<input type="radio" name="choices" value="3" id="3"><label for="3">電気を貯める</label><br>
 			</form>
 			<button onclick="Decision();">つぎへ</button>
 		</main>
@@ -61,7 +61,7 @@
 		<script>
 			function Decision() {
 				let result = document.getElementById("question").choices.value;
-				if (result === "1") {
+				if (result === "3") {
 					document.cookie = "qr-quiz-individual-research-3=y; domain=seig-physics.github.io; max-age=60*60*12;";
 				} else {
 					document.cookie = "qr-quiz-individual-research-3=n; domain=seig-physics.github.io; max-age=60*60*12;";
