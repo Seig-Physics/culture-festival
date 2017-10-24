@@ -30,6 +30,11 @@
       <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,ie7.js@2.1b4(IE9.js),respond@1.4.2"></script>
     <![endif]-->
 	</head>
+	<script>
+		if (!navigator.cookieEnabled) {
+			alert('Cookieが有効になっていません。紙をもらってください。');
+		}
+	</script>
 	<body>
 		<header>
 			<img src="//seig-physics.github.io/culture-festival/2017/qr-quiz/logo.svg" alt="聖学院物理部 QRクイズ" id="logo">
@@ -38,6 +43,7 @@
 			<h1>
 				QRクイズへようこそ！
 			</h1>
+			<button onclick=location.href = document.referrer>問題へ</button>
 			<h2>
 				やり方
 			</h2>
@@ -47,9 +53,6 @@
 		</footer>
 		<script async src="//googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
-			if (!navigator.cookieEnabled) {
-				alert('Cookieが有効になっていません。紙をもらってください。');
-			}
 			document.cookie = 'qr-question-start=y; domain=seig-physics.github.io; path=/; max-age=60*60*12';
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
