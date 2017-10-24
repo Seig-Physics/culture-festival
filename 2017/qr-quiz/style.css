@@ -135,6 +135,7 @@ button {
 	background: #3e80e4;
 }
 label {
+	max-width: 300px;
 	width: 80%;
 	background: #3e80e4;
 	display: block;
