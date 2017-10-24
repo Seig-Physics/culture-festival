@@ -136,14 +136,14 @@ button {
 }
 label {
 	width: 80%;
-	background: #00ab95;
+	background: #3e80e4;
 	display: block;
 }
 input[name="choices"] {
 	display: none;
 }
 input[name="choices"]:checked + label {
-  background: #000;
+  background: #3769c8;
 }
 input[name="choices"] + label:hover {
   background: #0f0;
