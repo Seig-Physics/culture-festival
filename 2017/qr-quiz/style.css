@@ -156,6 +156,12 @@ td {
 	width: 5em;
 }
 
+@media screen and (min-width:912px) {
+	.br {
+		display: none;
+	}
+}
+
 /* MainFont */
 
 @font-face {
