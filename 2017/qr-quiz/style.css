@@ -75,6 +75,7 @@ body {
 	background: rgba(62,128,228,50);
 }
 main {
+	font-size: width: ;
 	margin: 10px 0;
 	padding: 10px;
 	-webkit-box-flex: 1;
@@ -94,6 +95,10 @@ footer,header {
 footer a,header a {
 	text-decoration: none;
 	color: #f3f3f3;
+}
+h1 {
+	font-size: 5vmin;
+	margin-bottom: 5vmin;
 }
 a {
 	color: #3e80e4;
