@@ -38,7 +38,7 @@
 		<header>
 			<h1>ドローン証明書</h1>
 		</header>
-		<main>
+		<main id="id">
 
 		</main>
 		<footer>
@@ -59,7 +59,7 @@
 				let hour = regulate(time.getHours());
 				let min = regulate(time.getMinutes());
 				let sec = regulate(time.getSeconds());
-				document.getElementsByTagName("main").innerHTML = hour + min + sec;
+				document.getElementById("id").innerHTML = hour + min + sec;
 			}
 			setInterval(clock, 1000);
 		</script>
