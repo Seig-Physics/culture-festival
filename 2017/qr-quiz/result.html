@@ -56,86 +56,57 @@
 		</footer>
 		<script async src="//googletagmanager.com/gtag/js?id=UA-68964193-13"></script>
 		<script>
-			function Failure(number){
-				document.getElementById(number).innerHTML = "×"
-			}
-			function Passing(number){
-				document.getElementById(number).innerHTML = "●"
-			}
 			let result = 1;
 			if(document.cookie.indexOf("qr-quiz-individual-research-1=y",0) == -1){
-				Failure("1");
 				}else{
-				Passing("1");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-individual-research-2=y",0) == -1){
-				Failure("2");
 				}else{
-				Passing("2");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-individual-research-3=y",0) == -1){
-				Failure("3");
 				}else{
-				Passing("3");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-liquid-nitrogen-1=y",0) == -1){
-				Failure("1");
 				}else{
-				Passing("1");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-liquid-nitrogen-2=y",0) == -1){
-				Failure("2");
 				}else{
-				Passing("2");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-liquid-nitrogen-3=y",0) == -1){
-				Failure("3");
 				}else{
-				Passing("3");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-robot-1=y",0) == -1){
-				Failure("1");
 				}else{
-				Passing("1");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-robot-2=y",0) == -1){
-				Failure("2");
 				}else{
-				Passing("2");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-robot-3=y",0) == -1){
-				Failure("3");
 				}else{
-				Passing("3");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-space-elevator-1=y",0) == -1){
-				Failure("1");
 				}else{
-				Passing("1");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-space-elevator-2=y",0) == -1){
-				Failure("2");
 				}else{
-				Passing("2");
 				result = result + 1;
 			}
 			if(document.cookie.indexOf("qr-quiz-space-elevator-3=y",0) == -1){
-				Failure("3");
 				}else{
-				Passing("3");
 				result = result + 1;
 			}
 			function Decision() {
+				alert(result);
 				if(result > 7) {
 					document.getElementById("drone-card").innerHTML = "<iframe src='drone-card.html'>";
 					}else{
