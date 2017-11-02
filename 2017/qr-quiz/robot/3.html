@@ -64,9 +64,9 @@
 			function Decision() {
 				let result = document.getElementById("question").choices.value;
 				if (result === "3") {
-					document.cookie = "qr-quiz-robot-3=y; domain=seig-physics.github.io; max-age=60*60*12;";
+					document.cookie = "qr-quiz-robot-3=y; domain=seig-physics.github.io;";
 				} else {
-					document.cookie = "qr-quiz-robot-3=n; domain=seig-physics.github.io; max-age=60*60*12;";
+					document.cookie = "qr-quiz-robot-3=n; domain=seig-physics.github.io;";
 				}
 				location.href = "result";
 			}
