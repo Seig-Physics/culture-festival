@@ -95,27 +95,10 @@
 			}
 			function Decision() {
 				if(result > 7) {
-					document.getElementById("drone-card").innerHTML = "<h2>ドローン許可証</h2><div id='ID'></div><div id='opyright'>Copyright &#169; ご注文はぶつりですか？</div>";
-					setInterval(clock, 1000);
+					document.getElementById("drone-card").innerHTML = "<iframe src='drone-card.htm'>ドローン証明書</iframe>";
 					}else{
 					document.getElementById("drone-card").innerHTML = "<h2>残念！</h2><p>もう一度挑戦してね！</p>";
 				}
-			}
-			function regulate(num) {
-				let ret;
-				if (num < 10) {
-					ret = '0' + num;
-				} else {
-					ret = num;
-				}
-				return ret;
-			}
-			function clock() {
-				let time = new Date();
-				let hour = regulate(time.getHours());
-				let min = regulate(time.getMinutes());
-				let sec = regulate(time.getSeconds());
-				document.getElementById('ID').innerHTML = hour + min + sec;
 			}
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}

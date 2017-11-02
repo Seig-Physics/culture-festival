@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head lang="ja">
+		<meta charset="UTF-8"/>
+		<meta content="noindex,nofollow,noarchive" name="robots"/>
+	<body>
+		<header>
+			<h1>ドローン証明書</h1>
+		</header>
+		<main>
+
+		</main>
+		<footer>
+			&#169; ご注文はぶつりですか？
+		</footer>
+		<script>
+			function regulate(num) {
+				let ret;
+				if (num < 10) {
+					ret = '0' + num;
+					} else {
+					ret = num;
+				}
+				return ret;
+			}
+			function clock() {
+				let time = new Date();
+				let hour = regulate(time.getHours());
+				let min = regulate(time.getMinutes());
+				let sec = regulate(time.getSeconds());
+				document.getElementsByName('main').innerHTML = hour + min + sec;
+			}
+			setInterval(clock, 1000);
+		</script>
+	</body>
+</html>
